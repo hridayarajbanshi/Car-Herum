@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Bungee Spice', sans-serif;}
-main{
+/* main{
   padding: 0px !important;
 }
 .hero{
@@ -18,4 +18,11 @@ main{
 }
 .heroTitle{
   font-size: 25px;
+} */
+@media all and (max-width: 500px) {
+  .heroTitle{
+    font-size: 30px;
+    text-align: center;
+  }
+  
 }
