@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-black text-aquamarine py-8">
       <div className="container mx-auto flex flex-col items-center">
         <p className="text-sm">
-          Car Herum &copy; {new Date().getFullYear()}
+          Dashboard &copy; {new Date().getFullYear()}
         </p>
         <div className="mt-4 flex space-x-4">
           <Link href="/" className="text-aquamarine hover:text-gray-400">

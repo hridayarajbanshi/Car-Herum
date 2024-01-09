@@ -3,7 +3,7 @@ import './globals.css'
 import Footer from '../components/Footer/page'
 import Navbar from '../components/Navbar/page'
 export const metadata = {
-  title: 'Car Herum',
+  title: 'Issue Tracker',
   description: 'Website for car rental and bookings to make your life easier.',
 }
 // const poppins = Poppins({
