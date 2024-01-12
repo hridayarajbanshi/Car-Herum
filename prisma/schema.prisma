@@ -6,6 +6,23 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("mysql://root:admin1123@localhost:3006/issue-tracker?")
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Issue {
+  id Int @id @default(autoincrement())
+  title String @db.VarChar(255)
+  description String @db.Text
+  status Status @default(OPEN)
+  createdAt DateTime @default(now())
+  updataed DateTime @updatedAt
+
+}
+
+
+enum Status {
+  OPEN
+  IN_PROGRESS
+  DONE
 }
