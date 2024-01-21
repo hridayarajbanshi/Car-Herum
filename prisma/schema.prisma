@@ -10,19 +10,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Issue {
-  id Int @id @default(autoincrement())
-  title String @db.VarChar(255)
-  description String @db.Text
-  status Status @default(OPEN)
-  createdAt DateTime @default(now())
-  updataed DateTime @updatedAt
-
-}
 
 
-enum Status {
-  OPEN
-  IN_PROGRESS
-  DONE
-}
+
